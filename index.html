@@ -391,6 +391,8 @@
         .login-action-btn.wide:hover { background:linear-gradient(135deg,#0284c7,#1d4ed8); border-color:transparent; }
         .login-action-btn.fb .lab-ic { background:#fef3c7; }
         .login-action-btn.pol .lab-ic { background:#dcfce7; }
+        .login-action-btn.wl { grid-column:1 / -1; height:46px; flex-direction:row; gap:8px; font-size:0.72rem; background:#fffbeb; border-color:#fcd34d; color:#92400e; }
+        .login-action-btn.wl .lab-ic { background:#fef3c7; width:24px; height:24px; }
 
 
         .wallet-epoch-divider { display:flex; align-items:center; gap:8px; margin:10px 0; color:#6366f1; font-size:0.68rem; font-weight:800; text-align:center; }
@@ -3221,12 +3223,12 @@
                 </div>
                 <button onclick="handleStudentLogin()" style="margin-top:10px;">Access Dashboard →</button>
                 <button class="help-btn-login" onclick="openHelpCenter()">🎧 Help & Support Center</button>
-                <button onclick="openWlStatusCheck()" style="background:#f59e0b; margin-top:8px; font-size:0.82rem;">⏳ Check Waiting List Status</button>
                 <button onclick="toggleLoginType('admin')" class="btn-link">Switch to Admin Dashboard</button>
                 <div class="login-action-row">
-                    <button type="button" class="login-action-btn wide" onclick="openCheckSeatAvailabilityModal(true)"><span class="lab-ic">🔍</span><span>Check Seat Availability</span></button>
-                    <button type="button" class="login-action-btn pol" onclick="SamPolicy.openInfo('student')"><span class="lab-ic">📜</span><span>View Policies &amp; Terms</span></button>
-                    <button type="button" class="login-action-btn fb" onclick="openPublicFeedback()"><span class="lab-ic">💬</span><span>Feedback</span></button>
+                    <button type="button" class="login-action-btn wide" onclick="openCheckSeatAvailabilityModal(true)"><span class="lab-ic">&#128269;</span><span>Check Seat Availability</span></button>
+                    <button type="button" class="login-action-btn fb" onclick="openPublicFeedback()"><span class="lab-ic">&#128172;</span><span>Feedback</span></button>
+                    <button type="button" class="login-action-btn pol" onclick="SamPolicy.openInfo('student')"><span class="lab-ic">&#128220;</span><span>View Policies &amp; Terms</span></button>
+                    <button type="button" class="login-action-btn wl" onclick="openWlStatusCheck()"><span class="lab-ic">&#9203;</span><span>Check Waiting List Status</span></button>
                 </div>
             </div>
 
@@ -3247,9 +3249,10 @@
                 <button class="help-btn-login" onclick="openAdminHelpCenter()">🎧 Help &amp; Support Center</button>
                 <button onclick="toggleLoginType('student')" class="btn-link">Switch to Student Dashboard</button>
                 <div class="login-action-row">
-                    <button type="button" class="login-action-btn wide" onclick="openCheckSeatAvailabilityModal(true)"><span class="lab-ic">🔍</span><span>Check Seat Availability</span></button>
-                    <button type="button" class="login-action-btn pol" onclick="SamPolicy.openInfo('admin')"><span class="lab-ic">📜</span><span>View Policies &amp; Terms</span></button>
-                    <button type="button" class="login-action-btn fb" onclick="openPublicFeedback()"><span class="lab-ic">💬</span><span>Feedback</span></button>
+                    <button type="button" class="login-action-btn wide" onclick="openCheckSeatAvailabilityModal(true)"><span class="lab-ic">&#128269;</span><span>Check Seat Availability</span></button>
+                    <button type="button" class="login-action-btn fb" onclick="openPublicFeedback()"><span class="lab-ic">&#128172;</span><span>Feedback</span></button>
+                    <button type="button" class="login-action-btn pol" onclick="SamPolicy.openInfo('admin')"><span class="lab-ic">&#128220;</span><span>View Policies &amp; Terms</span></button>
+                    <button type="button" class="login-action-btn wl" onclick="openWlStatusCheck()"><span class="lab-ic">&#9203;</span><span>Check Waiting List Status</span></button>
                 </div>
             </div>
 
